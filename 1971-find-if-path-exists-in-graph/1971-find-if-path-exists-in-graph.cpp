@@ -1,9 +1,29 @@
-
 class Solution {
 public:
-    bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
+    bool dfs(int src, int dest, vector<vector<int>>& adj,
+             vector<bool>& vis) {
 
-        
+        if (src == dest) {
+            return true;
+        }
+
+        vis[src] = true;
+
+        for (int v : adj[src]) {
+            if (!vis[v]) {
+                if (dfs(v, dest, adj, vis)) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    bool validPath(int n, vector<vector<int>>& edges,
+                   int source, int destination) {
+
+        // Build adjacency list
         vector<vector<int>> adj(n);
 
         for (auto edge : edges) {
@@ -14,31 +34,9 @@ public:
             adj[v].push_back(u);
         }
 
-        // Step 2: Initialize BFS
-        queue<int> q;
-        vector<bool> visited(n, false);
+        vector<bool> vis(n, false);
 
-        q.push(source);
-        visited[source] = true;
-
-        // Step 3: BFS Traversal
-        while (!q.empty()) {
-            int node = q.front();
-            q.pop();
-
-            if (node == destination) {
-                return true;
-            }
-
-            for (int neighbour : adj[node]) {
-                if (!visited[neighbour]) {
-                    visited[neighbour] = true;
-                    q.push(neighbour);
-                }
-            }
-        }
-
-        return false;
+        return dfs(source, destination, adj, vis);
     }
 };
 
