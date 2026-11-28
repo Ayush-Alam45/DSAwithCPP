@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/Ayush-Alam45/DSAwithCPP/tree/master/0094-binary-tree-inorder-traversal) |
 | [0394-decode-string](https://github.com/Ayush-Alam45/DSAwithCPP/tree/master/0394-decode-string) |
 ## Recursion
 |  |
@@ -30,4 +31,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0074-search-a-2d-matrix](https://github.com/Ayush-Alam45/DSAwithCPP/tree/master/0074-search-a-2d-matrix) |
+## Tree
+|  |
+| ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/Ayush-Alam45/DSAwithCPP/tree/master/0094-binary-tree-inorder-traversal) |
+## Depth-First Search
+|  |
+| ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/Ayush-Alam45/DSAwithCPP/tree/master/0094-binary-tree-inorder-traversal) |
+## Binary Tree
+|  |
+| ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/Ayush-Alam45/DSAwithCPP/tree/master/0094-binary-tree-inorder-traversal) |
 <!---LeetCode Topics End-->
